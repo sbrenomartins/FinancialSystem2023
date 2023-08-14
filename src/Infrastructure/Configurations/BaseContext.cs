@@ -31,6 +31,6 @@ public class BaseContext : IdentityDbContext<ApplicationUser>
 
     public string GetConnectionString()
     {
-        return "Data Source=localhost,1433;Initial Catalog=FinancialSystem2023;Integrated Security=False;User Id=SA;Password=P@ssword123;";
+        return "Data Source=localhost,1433;Initial Catalog=FinancialSystem2023;Integrated Security=False;User Id=SA;Password=P@ssword123;TrustServerCertificate=True;Encrypt=false;";
     }
 }
